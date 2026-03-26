@@ -49,21 +49,21 @@ git clone https://github.com/yourusername/your-repo.git
 cd your-repo
 
 
-Install dependencies
+**Install dependencies**
 
 pip install -r requirements.txt
 
-Configure environment variables in app.py:
+**Configure environment variables in app.py:**
 
 STRIPE_SECRET_KEY = "your_stripe_secret_key"
 STRIPE_PRICE_ID = "your_stripe_price_id"
 BASE_URL = "http://localhost:8501"
 
-Run the app
+**Run the app**
 
 streamlit run app.py
 
-📦 Optional: Docker Deployment
+**📦 Optional: Docker Deployment**
 
 FROM python:3.11-slim
 
@@ -73,7 +73,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
-Build and run:
+**Build and run:**
 
 docker build -t saas-app .
 docker run -p 8501:8501 saas-app
