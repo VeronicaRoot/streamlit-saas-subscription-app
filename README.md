@@ -77,3 +77,7 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 
 docker build -t saas-app .
 docker run -p 8501:8501 saas-app
+
+₿ Support / Donate
+
+BTC Address: bc1ql0nevlj2ygh9tejy47g3yd06l7hjh64raywzv4
